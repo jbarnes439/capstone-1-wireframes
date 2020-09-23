@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Index HTML wireframe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./main.css">
+</head>
+<body>
+  <nav role='navigation'>Nav</nav>
+  <main role='main'>
+    <header role='banner'>
+      <h3>Quiz Topic</h3>
+    </header>
+
+    <section>
+      <h3>Quiz Question</h3>
+      <div class="container">       
+        <form id="question-form">
+             <legend>Current Question</legend>
+             <div class="button-div">
+            <input type="radio" name="answers" value="question-answer1">
+            <label class="answer-select">Answer 1</label><br>
+            <input type="radio"  name="answers" value="question-answer2">
+            <label class="answer-select">Answer 2</label><br>
+            <input type="radio" name="answers" value="question-answer3">
+            <label class="answer-select">Answer 3</label><br>
+            <input type="radio" name="answers" value="question-answer4">
+            <label class="answer-select">Answer 4</label><br>
+            </div>
+            <button type="submit" id="give-answer">Send it!</button>
+        </form>
+        <quiz-place>Question number: QuestionNumber out of TotalQuestions.</quiz-place><br>
+        <score-spot>You have gotten CorrectAnswerCount right!</score-spot>        
+      </div>
+    </section>
+
+    <section>
+      Quiz progress/results
+    </section>
+
+    <section>
+      <button>Quit quiz</button>  
+    </section>
+  </main>
+
+  <footer role='content-info'>Footer <button>log-out</button></footer>
+
+</body>
+</html>
